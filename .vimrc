@@ -15,7 +15,9 @@ nmap <S-Right> :tabnext<CR>
 " Plugins below
 call plug#begin("~/.vim/plugged")
 
+Plug "https://github.com/tpope/vim-commentary"
 Plug 'junegunn/vim-easy-align'
+Plug 'itchyny/lightline.vim'
 Plug 'https://github.com/vim-python/python-syntax'
 
 call plug#end()
