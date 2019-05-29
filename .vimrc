@@ -1,24 +1,47 @@
 " Settings below
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+autocmd vimenter * NERDTree
 syntax on
+set number relativenumber
+set nu rnu
 
-colorscheme gruvbox
-set number
+if system('date +%H') > 18
+  colorscheme gruvbox
+  set background=dark
+else
+  colorscheme donbass
+  set background=light
+endif
 
+
+" Mappings
 nmap <S-j> 5j
 nmap <S-k> 5k
-nmap <c-s> :w<CR>
-imap <c-s> <Esc>:w<CR>
-nmap <S-Left> :tabprevious<CR>                                                                            
+nmap <S-h> 5h
+nmap <S-l> 5l
+nmap <S-s> :w<CR>
+imap <S-Left> :tabprevious<CR>
+imap <S-Right> :tabnext<CR>
+nmap <S-Left> :tabprevious<CR>
 nmap <S-Right> :tabnext<CR>
+nmap <S-t> :tabnew 
+nmap <S-C-j> <C-w>j
+nmap <S-C-k> <C-w>k
+nmap <S-C-h> <C-w>h
+nmap <S-C-l> <C-w>l
 
 " Plugins below
 call plug#begin("~/.vim/plugged")
 
-Plug "https://github.com/tpope/vim-commentary"
+Plug 'valloric/youcompleteme'
+Plug 'tpope/vim-surround'
+Plug 'google/vim-jsonnet'
+Plug 'https://github.com/tpope/vim-commentary'
 Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 Plug 'https://github.com/vim-python/python-syntax'
+Plug 'https://github.com/hashivim/vim-terraform'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
