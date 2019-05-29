@@ -1,7 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/dcda/projects/scripts/todo'
-let g:netrw_dirhist_2='/Users/dcda/projects/amp/amp-core/gradle'
-let g:netrw_dirhist_3='/Users/dcda/projects/cvp/swagger/settings'
-let g:netrw_dirhist_4='/Users/dcda/projects/amp/amp-ingestion-service/src/k8s'
-let g:netrw_dirhist_5='/Users/dcda/projects/cvp/visual-similarities'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/dcda/projects/cvp/visual-similarities/resources/base'
+let g:netrw_dirhist_2='/Users/dcda/projects/cvp/color-extraction/.git'
