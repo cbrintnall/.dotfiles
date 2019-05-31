@@ -15,13 +15,21 @@ endif
 
 
 " Mappings
+
+" Visual mappings
+vmap <S-j> 5j
+vmap <S-k> 5k
+vmap <S-h> 5h
+vmap <S-l> 5l
+vmap <S-Right> e
+vmap <S-Left> ge
+
+" Normal mode mappings
 nmap <S-j> 5j
 nmap <S-k> 5k
 nmap <S-h> 5h
 nmap <S-l> 5l
 nmap <S-s> :w<CR>
-imap <S-Left> :tabprevious<CR>
-imap <S-Right> :tabnext<CR>
 nmap <S-Left> :tabprevious<CR>
 nmap <S-Right> :tabnext<CR>
 nmap <S-t> :tabnew 
@@ -29,6 +37,10 @@ nmap <S-C-j> <C-w>j
 nmap <S-C-k> <C-w>k
 nmap <S-C-h> <C-w>h
 nmap <S-C-l> <C-w>l
+
+" Insert mappings
+imap <S-Left> :tabprevious<CR>
+imap <S-Right> :tabnext<CR>
 
 " Plugins below
 call plug#begin("~/.vim/plugged")
