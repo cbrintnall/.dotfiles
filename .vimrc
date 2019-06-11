@@ -13,7 +13,6 @@ else
   set background=light
 endif
 
-
 " Mappings
 
 " Visual mappings
@@ -45,6 +44,7 @@ imap <S-Right> :tabnext<CR>
 " Plugins below
 call plug#begin("~/.vim/plugged")
 
+Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-surround'
 Plug 'google/vim-jsonnet'
