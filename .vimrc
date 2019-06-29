@@ -5,13 +5,8 @@ syntax on
 set number relativenumber
 set nu rnu
 
-if system('date +%H') > 18
-  colorscheme gruvbox
-  set background=dark
-else
-  colorscheme donbass
-  set background=light
-endif
+colorscheme gruvbox
+set background=dark
 
 " Mappings
 
@@ -34,12 +29,8 @@ nmap <S-Right> :tabnext<CR>
 nmap <S-t> :tabnew 
 nmap <S-C-j> <C-w>j
 nmap <S-C-k> <C-w>k
-nmap <S-C-h> <C-w>h
+nmap <S-C-h> <C-W>h
 nmap <S-C-l> <C-w>l
-
-" Insert mappings
-imap <S-Left> :tabprevious<CR>
-imap <S-Right> :tabnext<CR>
 
 " Plugins below
 call plug#begin("~/.vim/plugged")
