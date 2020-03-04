@@ -12,6 +12,8 @@ set background=dark
 set cursorline
 set stl+=%{ConflictedVersion()}
 
+let NERDTreeShowHidden=1
+
 highlight MatchParen cterm=bold ctermbg=Blue ctermfg=none
 highlight clear CursorLine
 highlight CursorLineNR ctermbg=Black ctermfg=White
