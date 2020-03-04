@@ -41,10 +41,24 @@ nmap <S-C-k> <C-w>k
 nmap <S-C-h> <C-W>h
 nmap <S-C-l> <C-w>l
 
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Plugins below
 call plug#begin("~/.vim/plugged")
 
+Plug 'https://github.com/leafgarland/typescript-vim.git'
+Plug 'vim-airline/vim-airline'
 Plug 'cespare/vim-toml'
+Plug 'https://github.com/ziglang/zig.vim.git'
+Plug 'https://github.com/moll/vim-node.git'
 Plug 'https://github.com/christoomey/vim-conflicted'
 Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -59,6 +73,8 @@ Plug 'https://github.com/hashivim/vim-terraform'
 Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'scrooloose/syntastic'
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
